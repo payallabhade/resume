@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="body.css">
+    <style>
+        body {
+            background-color: #f3f3f3;
+            font-family: 'Arial', sans-serif;
+        }
+        header {
+            background: #161716;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display:inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .portfolio-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #contact p {
+            font-size: 1.2em;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin-right: 10px;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .skills {
+            margin: 20px 0;
+        }
+        .skill-bar {
+            background: #ddd;
+            border-radius: 25px;
+            margin: 10px 0;
+            overflow: hidden;
+            height: 20px;
+            max-width: 100%;
+        }
+        .skill-bar span {
+            display: block;
+            height: 100%;
+            background: #d6b0de;
+        }
+        .carousel {
+            display: flex;
+            overflow-x:auto;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .carousel img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            flex: 0 0 80%;
+        }
+        .testimonial {
+            background: #eee;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="photo.jpg" alt="Payal Labhade" style="border-radius: 50%; width: 150px; display: block; margin: 0 auto 20px;">
+        <p>Hello, there! I am Payal Labhade, and I am currently a 3rd year Engineering student at Logimeer. I am passionate about learning and exploring 
+            new subjects.
+            As a student, I strive to develop essential skills such as critical thinking, problem-solving, and effective communication.
+             I believe that education is not just about academics but also about personal growth.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="carousel">
+            <img src="project1.jpg" alt="Reasoning Skills Assessment App">
+            <img src="project2.jpg" alt="IoT with AI Integration">
+            <img src="project3.jpg" alt="Interactive Python Web App">
+        </div>
+        <div class="portfolio-card">
+            <h3>Reasoning Skills Assessment App</h3>
+            <p>A web-based application for children aged 8-13 to evaluate reasoning skills and provide feedback on strengths and weaknesses.</p>
+        </div>
+        <div class="portfolio-card">
+            <h3>IoT with AI Integration</h3>
+            <p>Implemented device integration for smart solutions, leveraging cloud storage and MQTT protocols.</p>
+        </div>
+        <div class="portfolio-card">
+            <h3>Interactive Python Web App</h3>
+            <p>Developed dynamic web applications to enhance interactivity and user experience.</p>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <h3>Programming Languages</h3>
+            <div class="skill-bar"><span style="width: 20%;">HTML</span></div>
+            <div class="skill-bar"><span style="width: 5%;">JavaScript</span></div>
+            <div class="skill-bar"><span style="width: 5%;">Java</span></div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <p>"Payal's work on our project was outstanding. Her attention to detail and ability to meet deadlines was impressive." - Classmate</p>
+        </div>
+        <div class="testimonial">
+            <p>"She is a quick learner and a pleasure to work with. Her enthusiasm and dedication shine through in all her projects." - Professor</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <i class="bi bi-envelope"> labhadepayal@gmail.com</i></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/payallabhade">Payal Labhade</a></p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/payallabhade"><i class="bi bi-instagram"></i> Instagram</a>
+            <a href="https://www.twitter.com/payallabhade"><i class="bi bi-twitter"></i> Twitter</a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Payal Labhade</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
